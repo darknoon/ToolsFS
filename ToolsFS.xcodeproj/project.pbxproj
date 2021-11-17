@@ -11,7 +11,40 @@
 		493D9FF927453CF6007ADAA3 /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 493D9FF827453CF6007ADAA3 /* ContentView.swift */; };
 		493D9FFB27453CF7007ADAA3 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 493D9FFA27453CF7007ADAA3 /* Assets.xcassets */; };
 		493D9FFE27453CF7007ADAA3 /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 493D9FFD27453CF7007ADAA3 /* Preview Assets.xcassets */; };
+		493DA00C27453E1E007ADAA3 /* UniformTypeIdentifiers.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 493DA00B27453E1E007ADAA3 /* UniformTypeIdentifiers.framework */; platformFilter = maccatalyst; };
+		493DA00F27453E1E007ADAA3 /* FileProviderExtension.swift in Sources */ = {isa = PBXBuildFile; fileRef = 493DA00E27453E1E007ADAA3 /* FileProviderExtension.swift */; };
+		493DA01127453E1E007ADAA3 /* FileProviderItem.swift in Sources */ = {isa = PBXBuildFile; fileRef = 493DA01027453E1E007ADAA3 /* FileProviderItem.swift */; };
+		493DA01327453E1E007ADAA3 /* FileProviderEnumerator.swift in Sources */ = {isa = PBXBuildFile; fileRef = 493DA01227453E1E007ADAA3 /* FileProviderEnumerator.swift */; };
+		493DA01827453E1E007ADAA3 /* ToolsFileProvider.appex in Embed App Extensions */ = {isa = PBXBuildFile; fileRef = 493DA00927453E1E007ADAA3 /* ToolsFileProvider.appex */; settings = {ATTRIBUTES = (RemoveHeadersOnCopy, ); }; };
+		493DA01F27453EB2007ADAA3 /* XcodeReleases.json in Resources */ = {isa = PBXBuildFile; fileRef = 493DA01E27453EB2007ADAA3 /* XcodeReleases.json */; };
+		493DA02127453F0D007ADAA3 /* Manager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 493DA02027453F0D007ADAA3 /* Manager.swift */; };
+		493DA02327453F9F007ADAA3 /* XcodeReleases.swift in Sources */ = {isa = PBXBuildFile; fileRef = 493DA02227453F9F007ADAA3 /* XcodeReleases.swift */; };
+		49B191F12745881700CC7319 /* XcodeReleasesFetcher.swift in Sources */ = {isa = PBXBuildFile; fileRef = 49B191F02745881700CC7319 /* XcodeReleasesFetcher.swift */; };
 /* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		493DA01627453E1E007ADAA3 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 493D9FEB27453CF6007ADAA3 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 493DA00827453E1E007ADAA3;
+			remoteInfo = FileProvider;
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXCopyFilesBuildPhase section */
+		493DA01C27453E1E007ADAA3 /* Embed App Extensions */ = {
+			isa = PBXCopyFilesBuildPhase;
+			buildActionMask = 2147483647;
+			dstPath = "";
+			dstSubfolderSpec = 13;
+			files = (
+				493DA01827453E1E007ADAA3 /* ToolsFileProvider.appex in Embed App Extensions */,
+			);
+			name = "Embed App Extensions";
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXCopyFilesBuildPhase section */
 
 /* Begin PBXFileReference section */
 		493D9FF327453CF6007ADAA3 /* ToolsFS.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = ToolsFS.app; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -20,6 +53,17 @@
 		493D9FFA27453CF7007ADAA3 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		493D9FFD27453CF7007ADAA3 /* Preview Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = "Preview Assets.xcassets"; sourceTree = "<group>"; };
 		493D9FFF27453CF7007ADAA3 /* ToolsFS.entitlements */ = {isa = PBXFileReference; lastKnownFileType = text.plist.entitlements; path = ToolsFS.entitlements; sourceTree = "<group>"; };
+		493DA00927453E1E007ADAA3 /* ToolsFileProvider.appex */ = {isa = PBXFileReference; explicitFileType = "wrapper.app-extension"; includeInIndex = 0; path = ToolsFileProvider.appex; sourceTree = BUILT_PRODUCTS_DIR; };
+		493DA00B27453E1E007ADAA3 /* UniformTypeIdentifiers.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = UniformTypeIdentifiers.framework; path = System/Library/Frameworks/UniformTypeIdentifiers.framework; sourceTree = SDKROOT; };
+		493DA00E27453E1E007ADAA3 /* FileProviderExtension.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FileProviderExtension.swift; sourceTree = "<group>"; };
+		493DA01027453E1E007ADAA3 /* FileProviderItem.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FileProviderItem.swift; sourceTree = "<group>"; };
+		493DA01227453E1E007ADAA3 /* FileProviderEnumerator.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FileProviderEnumerator.swift; sourceTree = "<group>"; };
+		493DA01427453E1E007ADAA3 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		493DA01527453E1E007ADAA3 /* FileProvider.entitlements */ = {isa = PBXFileReference; lastKnownFileType = text.plist.entitlements; path = FileProvider.entitlements; sourceTree = "<group>"; };
+		493DA01E27453EB2007ADAA3 /* XcodeReleases.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; path = XcodeReleases.json; sourceTree = "<group>"; };
+		493DA02027453F0D007ADAA3 /* Manager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Manager.swift; sourceTree = "<group>"; };
+		493DA02227453F9F007ADAA3 /* XcodeReleases.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = XcodeReleases.swift; sourceTree = "<group>"; };
+		49B191F02745881700CC7319 /* XcodeReleasesFetcher.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = XcodeReleasesFetcher.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -30,6 +74,14 @@
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
+		493DA00627453E1E007ADAA3 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				493DA00C27453E1E007ADAA3 /* UniformTypeIdentifiers.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
@@ -37,6 +89,9 @@
 			isa = PBXGroup;
 			children = (
 				493D9FF527453CF6007ADAA3 /* ToolsFS */,
+				493DA01D27453EB2007ADAA3 /* Data */,
+				493DA00D27453E1E007ADAA3 /* FileProvider */,
+				493DA00A27453E1E007ADAA3 /* Frameworks */,
 				493D9FF427453CF6007ADAA3 /* Products */,
 			);
 			sourceTree = "<group>";
@@ -45,6 +100,7 @@
 			isa = PBXGroup;
 			children = (
 				493D9FF327453CF6007ADAA3 /* ToolsFS.app */,
+				493DA00927453E1E007ADAA3 /* ToolsFileProvider.appex */,
 			);
 			name = Products;
 			sourceTree = "<group>";
@@ -54,6 +110,7 @@
 			children = (
 				493D9FF627453CF6007ADAA3 /* ToolsFSApp.swift */,
 				493D9FF827453CF6007ADAA3 /* ContentView.swift */,
+				493DA02027453F0D007ADAA3 /* Manager.swift */,
 				493D9FFA27453CF7007ADAA3 /* Assets.xcassets */,
 				493D9FFF27453CF7007ADAA3 /* ToolsFS.entitlements */,
 				493D9FFC27453CF7007ADAA3 /* Preview Content */,
@@ -69,6 +126,36 @@
 			path = "Preview Content";
 			sourceTree = "<group>";
 		};
+		493DA00A27453E1E007ADAA3 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				493DA00B27453E1E007ADAA3 /* UniformTypeIdentifiers.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		493DA00D27453E1E007ADAA3 /* FileProvider */ = {
+			isa = PBXGroup;
+			children = (
+				493DA00E27453E1E007ADAA3 /* FileProviderExtension.swift */,
+				493DA01027453E1E007ADAA3 /* FileProviderItem.swift */,
+				493DA01227453E1E007ADAA3 /* FileProviderEnumerator.swift */,
+				493DA02227453F9F007ADAA3 /* XcodeReleases.swift */,
+				49B191F02745881700CC7319 /* XcodeReleasesFetcher.swift */,
+				493DA01427453E1E007ADAA3 /* Info.plist */,
+				493DA01527453E1E007ADAA3 /* FileProvider.entitlements */,
+			);
+			path = FileProvider;
+			sourceTree = "<group>";
+		};
+		493DA01D27453EB2007ADAA3 /* Data */ = {
+			isa = PBXGroup;
+			children = (
+				493DA01E27453EB2007ADAA3 /* XcodeReleases.json */,
+			);
+			path = Data;
+			sourceTree = "<group>";
+		};
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
@@ -79,15 +166,34 @@
 				493D9FEF27453CF6007ADAA3 /* Sources */,
 				493D9FF027453CF6007ADAA3 /* Frameworks */,
 				493D9FF127453CF6007ADAA3 /* Resources */,
+				493DA01C27453E1E007ADAA3 /* Embed App Extensions */,
 			);
 			buildRules = (
 			);
 			dependencies = (
+				493DA01727453E1E007ADAA3 /* PBXTargetDependency */,
 			);
 			name = ToolsFS;
 			productName = ToolsFS;
 			productReference = 493D9FF327453CF6007ADAA3 /* ToolsFS.app */;
 			productType = "com.apple.product-type.application";
+		};
+		493DA00827453E1E007ADAA3 /* FileProvider */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 493DA01927453E1E007ADAA3 /* Build configuration list for PBXNativeTarget "FileProvider" */;
+			buildPhases = (
+				493DA00527453E1E007ADAA3 /* Sources */,
+				493DA00627453E1E007ADAA3 /* Frameworks */,
+				493DA00727453E1E007ADAA3 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = FileProvider;
+			productName = FileProvider;
+			productReference = 493DA00927453E1E007ADAA3 /* ToolsFileProvider.appex */;
+			productType = "com.apple.product-type.app-extension";
 		};
 /* End PBXNativeTarget section */
 
@@ -100,6 +206,9 @@
 				LastUpgradeCheck = 1320;
 				TargetAttributes = {
 					493D9FF227453CF6007ADAA3 = {
+						CreatedOnToolsVersion = 13.2;
+					};
+					493DA00827453E1E007ADAA3 = {
 						CreatedOnToolsVersion = 13.2;
 					};
 				};
@@ -118,6 +227,7 @@
 			projectRoot = "";
 			targets = (
 				493D9FF227453CF6007ADAA3 /* ToolsFS */,
+				493DA00827453E1E007ADAA3 /* FileProvider */,
 			);
 		};
 /* End PBXProject section */
@@ -132,6 +242,14 @@
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
+		493DA00727453E1E007ADAA3 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				493DA01F27453EB2007ADAA3 /* XcodeReleases.json in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 /* End PBXResourcesBuildPhase section */
 
 /* Begin PBXSourcesBuildPhase section */
@@ -140,11 +258,32 @@
 			buildActionMask = 2147483647;
 			files = (
 				493D9FF927453CF6007ADAA3 /* ContentView.swift in Sources */,
+				493DA02127453F0D007ADAA3 /* Manager.swift in Sources */,
 				493D9FF727453CF6007ADAA3 /* ToolsFSApp.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
+		493DA00527453E1E007ADAA3 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				493DA00F27453E1E007ADAA3 /* FileProviderExtension.swift in Sources */,
+				493DA02327453F9F007ADAA3 /* XcodeReleases.swift in Sources */,
+				49B191F12745881700CC7319 /* XcodeReleasesFetcher.swift in Sources */,
+				493DA01127453E1E007ADAA3 /* FileProviderItem.swift in Sources */,
+				493DA01327453E1E007ADAA3 /* FileProviderEnumerator.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 /* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		493DA01727453E1E007ADAA3 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 493DA00827453E1E007ADAA3 /* FileProvider */;
+			targetProxy = 493DA01627453E1E007ADAA3 /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
 
 /* Begin XCBuildConfiguration section */
 		493DA00027453CF7007ADAA3 /* Debug */ = {
@@ -265,6 +404,7 @@
 		493DA00327453CF7007ADAA3 /* Debug */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
 				CODE_SIGN_ENTITLEMENTS = ToolsFS/ToolsFS.entitlements;
@@ -292,6 +432,7 @@
 		493DA00427453CF7007ADAA3 /* Release */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
 				CODE_SIGN_ENTITLEMENTS = ToolsFS/ToolsFS.entitlements;
@@ -316,6 +457,58 @@
 			};
 			name = Release;
 		};
+		493DA01A27453E1E007ADAA3 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				CODE_SIGN_ENTITLEMENTS = FileProvider/FileProvider.entitlements;
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = DDE4G723AJ;
+				ENABLE_HARDENED_RUNTIME = YES;
+				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_FILE = FileProvider/Info.plist;
+				INFOPLIST_KEY_CFBundleDisplayName = FileProvider;
+				INFOPLIST_KEY_NSHumanReadableCopyright = "";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/../Frameworks",
+					"@executable_path/../../../../Frameworks",
+				);
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = com.darknoon.ToolsFS.FileProvider;
+				PRODUCT_NAME = ToolsFileProvider;
+				SKIP_INSTALL = YES;
+				SWIFT_EMIT_LOC_STRINGS = YES;
+				SWIFT_VERSION = 5.0;
+			};
+			name = Debug;
+		};
+		493DA01B27453E1E007ADAA3 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				CODE_SIGN_ENTITLEMENTS = FileProvider/FileProvider.entitlements;
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = DDE4G723AJ;
+				ENABLE_HARDENED_RUNTIME = YES;
+				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_FILE = FileProvider/Info.plist;
+				INFOPLIST_KEY_CFBundleDisplayName = FileProvider;
+				INFOPLIST_KEY_NSHumanReadableCopyright = "";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/../Frameworks",
+					"@executable_path/../../../../Frameworks",
+				);
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = com.darknoon.ToolsFS.FileProvider;
+				PRODUCT_NAME = ToolsFileProvider;
+				SKIP_INSTALL = YES;
+				SWIFT_EMIT_LOC_STRINGS = YES;
+				SWIFT_VERSION = 5.0;
+			};
+			name = Release;
+		};
 /* End XCBuildConfiguration section */
 
 /* Begin XCConfigurationList section */
@@ -333,6 +526,15 @@
 			buildConfigurations = (
 				493DA00327453CF7007ADAA3 /* Debug */,
 				493DA00427453CF7007ADAA3 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		493DA01927453E1E007ADAA3 /* Build configuration list for PBXNativeTarget "FileProvider" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				493DA01A27453E1E007ADAA3 /* Debug */,
+				493DA01B27453E1E007ADAA3 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
