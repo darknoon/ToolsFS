@@ -18,8 +18,17 @@
 		493DA01827453E1E007ADAA3 /* ToolsFileProvider.appex in Embed App Extensions */ = {isa = PBXBuildFile; fileRef = 493DA00927453E1E007ADAA3 /* ToolsFileProvider.appex */; settings = {ATTRIBUTES = (RemoveHeadersOnCopy, ); }; };
 		493DA01F27453EB2007ADAA3 /* XcodeReleases.json in Resources */ = {isa = PBXBuildFile; fileRef = 493DA01E27453EB2007ADAA3 /* XcodeReleases.json */; };
 		493DA02127453F0D007ADAA3 /* Manager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 493DA02027453F0D007ADAA3 /* Manager.swift */; };
-		493DA02327453F9F007ADAA3 /* XcodeReleases.swift in Sources */ = {isa = PBXBuildFile; fileRef = 493DA02227453F9F007ADAA3 /* XcodeReleases.swift */; };
+		493DA02327453F9F007ADAA3 /* XcodeRelease.swift in Sources */ = {isa = PBXBuildFile; fileRef = 493DA02227453F9F007ADAA3 /* XcodeRelease.swift */; };
 		49B191F12745881700CC7319 /* XcodeReleasesFetcher.swift in Sources */ = {isa = PBXBuildFile; fileRef = 49B191F02745881700CC7319 /* XcodeReleasesFetcher.swift */; };
+		49B192222746A78E00CC7319 /* SDKs.swift in Sources */ = {isa = PBXBuildFile; fileRef = 49B192212746A78E00CC7319 /* SDKs.swift */; };
+		49B192242746A7FA00CC7319 /* Version.swift in Sources */ = {isa = PBXBuildFile; fileRef = 49B192232746A7FA00CC7319 /* Version.swift */; };
+		49B192262746A87100CC7319 /* VersionNumber.swift in Sources */ = {isa = PBXBuildFile; fileRef = 49B192252746A87100CC7319 /* VersionNumber.swift */; };
+		49B192282746A9A700CC7319 /* Release.swift in Sources */ = {isa = PBXBuildFile; fileRef = 49B192272746A9A700CC7319 /* Release.swift */; };
+		49B1922A2746AAE500CC7319 /* Checksums.swift in Sources */ = {isa = PBXBuildFile; fileRef = 49B192292746AAE500CC7319 /* Checksums.swift */; };
+		49B1922C2746AB4900CC7319 /* Links.swift in Sources */ = {isa = PBXBuildFile; fileRef = 49B1922B2746AB4900CC7319 /* Links.swift */; };
+		49B1922E2746AEC100CC7319 /* PSTDateComponents.swift in Sources */ = {isa = PBXBuildFile; fileRef = 49B1922D2746AEC100CC7319 /* PSTDateComponents.swift */; };
+		49B192302746B01800CC7319 /* XcodeReleasesData.swift in Sources */ = {isa = PBXBuildFile; fileRef = 49B1922F2746B01800CC7319 /* XcodeReleasesData.swift */; };
+		49B192332746B4EB00CC7319 /* SharedDataFetcher.swift in Sources */ = {isa = PBXBuildFile; fileRef = 49B192322746B4EB00CC7319 /* SharedDataFetcher.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -62,8 +71,17 @@
 		493DA01527453E1E007ADAA3 /* FileProvider.entitlements */ = {isa = PBXFileReference; lastKnownFileType = text.plist.entitlements; path = FileProvider.entitlements; sourceTree = "<group>"; };
 		493DA01E27453EB2007ADAA3 /* XcodeReleases.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; path = XcodeReleases.json; sourceTree = "<group>"; };
 		493DA02027453F0D007ADAA3 /* Manager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Manager.swift; sourceTree = "<group>"; };
-		493DA02227453F9F007ADAA3 /* XcodeReleases.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = XcodeReleases.swift; sourceTree = "<group>"; };
+		493DA02227453F9F007ADAA3 /* XcodeRelease.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = XcodeRelease.swift; sourceTree = "<group>"; };
 		49B191F02745881700CC7319 /* XcodeReleasesFetcher.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = XcodeReleasesFetcher.swift; sourceTree = "<group>"; };
+		49B192212746A78E00CC7319 /* SDKs.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SDKs.swift; sourceTree = "<group>"; };
+		49B192232746A7FA00CC7319 /* Version.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Version.swift; sourceTree = "<group>"; };
+		49B192252746A87100CC7319 /* VersionNumber.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = VersionNumber.swift; sourceTree = "<group>"; };
+		49B192272746A9A700CC7319 /* Release.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Release.swift; sourceTree = "<group>"; };
+		49B192292746AAE500CC7319 /* Checksums.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Checksums.swift; sourceTree = "<group>"; };
+		49B1922B2746AB4900CC7319 /* Links.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Links.swift; sourceTree = "<group>"; };
+		49B1922D2746AEC100CC7319 /* PSTDateComponents.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PSTDateComponents.swift; sourceTree = "<group>"; };
+		49B1922F2746B01800CC7319 /* XcodeReleasesData.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = XcodeReleasesData.swift; sourceTree = "<group>"; };
+		49B192322746B4EB00CC7319 /* SharedDataFetcher.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SharedDataFetcher.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -137,11 +155,11 @@
 		493DA00D27453E1E007ADAA3 /* FileProvider */ = {
 			isa = PBXGroup;
 			children = (
+				49B192312746B4E400CC7319 /* Util */,
 				493DA00E27453E1E007ADAA3 /* FileProviderExtension.swift */,
 				493DA01027453E1E007ADAA3 /* FileProviderItem.swift */,
 				493DA01227453E1E007ADAA3 /* FileProviderEnumerator.swift */,
-				493DA02227453F9F007ADAA3 /* XcodeReleases.swift */,
-				49B191F02745881700CC7319 /* XcodeReleasesFetcher.swift */,
+				49B192202746A74A00CC7319 /* XcodeRelease */,
 				493DA01427453E1E007ADAA3 /* Info.plist */,
 				493DA01527453E1E007ADAA3 /* FileProvider.entitlements */,
 			);
@@ -154,6 +172,31 @@
 				493DA01E27453EB2007ADAA3 /* XcodeReleases.json */,
 			);
 			path = Data;
+			sourceTree = "<group>";
+		};
+		49B192202746A74A00CC7319 /* XcodeRelease */ = {
+			isa = PBXGroup;
+			children = (
+				49B1922F2746B01800CC7319 /* XcodeReleasesData.swift */,
+				493DA02227453F9F007ADAA3 /* XcodeRelease.swift */,
+				49B191F02745881700CC7319 /* XcodeReleasesFetcher.swift */,
+				49B192212746A78E00CC7319 /* SDKs.swift */,
+				49B192232746A7FA00CC7319 /* Version.swift */,
+				49B192252746A87100CC7319 /* VersionNumber.swift */,
+				49B192272746A9A700CC7319 /* Release.swift */,
+				49B192292746AAE500CC7319 /* Checksums.swift */,
+				49B1922B2746AB4900CC7319 /* Links.swift */,
+				49B1922D2746AEC100CC7319 /* PSTDateComponents.swift */,
+			);
+			path = XcodeRelease;
+			sourceTree = "<group>";
+		};
+		49B192312746B4E400CC7319 /* Util */ = {
+			isa = PBXGroup;
+			children = (
+				49B192322746B4EB00CC7319 /* SharedDataFetcher.swift */,
+			);
+			path = Util;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -267,9 +310,18 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				49B1922A2746AAE500CC7319 /* Checksums.swift in Sources */,
+				49B192222746A78E00CC7319 /* SDKs.swift in Sources */,
+				49B192282746A9A700CC7319 /* Release.swift in Sources */,
 				493DA00F27453E1E007ADAA3 /* FileProviderExtension.swift in Sources */,
-				493DA02327453F9F007ADAA3 /* XcodeReleases.swift in Sources */,
+				493DA02327453F9F007ADAA3 /* XcodeRelease.swift in Sources */,
 				49B191F12745881700CC7319 /* XcodeReleasesFetcher.swift in Sources */,
+				49B192332746B4EB00CC7319 /* SharedDataFetcher.swift in Sources */,
+				49B1922C2746AB4900CC7319 /* Links.swift in Sources */,
+				49B192242746A7FA00CC7319 /* Version.swift in Sources */,
+				49B192302746B01800CC7319 /* XcodeReleasesData.swift in Sources */,
+				49B192262746A87100CC7319 /* VersionNumber.swift in Sources */,
+				49B1922E2746AEC100CC7319 /* PSTDateComponents.swift in Sources */,
 				493DA01127453E1E007ADAA3 /* FileProviderItem.swift in Sources */,
 				493DA01327453E1E007ADAA3 /* FileProviderEnumerator.swift in Sources */,
 			);

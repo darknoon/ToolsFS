@@ -110,7 +110,7 @@ class FileProviderItem: NSObject, NSFileProviderItem {
         switch model {
         case .root:
             return .rootContainer
-        case .versionMajor(let majorVersion):
+        case .versionMajor(_):
             return .rootContainer
         case .versionItem(let version):
             return XcodeItem.versionMajor(majorVersion: version.number!.major).itemIdentifier
@@ -138,6 +138,32 @@ class FileProviderItem: NSObject, NSFileProviderItem {
         }
     }
 
+    var creationDate: Date? {
+        switch model {
+        case .root:
+            // TODO: return most recent
+            return .now
+        case .versionMajor(let majorVersion):
+            return data.firstRelease(for: majorVersion)
+        case .versionItem(let version):
+            let r = data.release(for: version)!
+            return r.date.date
+        }
+    }
+    
+    var contentModificationDate: Date? {
+        switch model {
+        case .root:
+            // TODO: return most recent
+            return .now
+        case .versionMajor(let majorVersion):
+            return data.mostRecentRelease(for: majorVersion)
+        case .versionItem(let version):
+            let r = data.release(for: version)!
+            return r.date.date
+        }
+    }
+    
     var extendedAttributes: [String: Data] {
         return ["com.apple.FinderInfo": Data()]
     }

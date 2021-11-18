@@ -22,22 +22,35 @@ class FileProviderExtension: NSObject, NSFileProviderReplicatedExtension {
         print("Asked to invalidate() for domain \(domain.identifier.rawValue)")
     }
     
+    @MainActor
     func item(for identifier: NSFileProviderItemIdentifier, request: NSFileProviderRequest, completionHandler: @escaping (NSFileProviderItem?, Error?) -> Void) -> Progress {
         // resolve the given identifier to a record in the model
         
         print("Asked for item for identifier \(identifier.rawValue)")
-        // TODO: implement the actual lookup
-        
+
         do {
+            // This can fail to decode the identifier
             let model = try XcodeItem(from: identifier)
-            // TODO: relate progress to fetching the data! How??
+            
+            
+            // TODO: relate Progress to fetching the data! How??
             Task {
-                let data = try await XcodeReleasesFetcher.shared.data
-                completionHandler(FileProviderItem(model: model, data: data), nil)
+                do {
+                    // Make sure we have the latest data
+                    let data = try await XcodeReleasesFetcher.shared.data
+                    // Pass it along to the item
+                    let item = FileProviderItem(model: model, data: data)
+                    completionHandler(item, nil)
+                } catch {
+                    completionHandler(nil, error)
+                }
             }
+
         } catch {
             completionHandler(nil, error)
+            return Progress()
         }
+
         
         return Progress()
     }
