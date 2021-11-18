@@ -94,7 +94,8 @@ extension XcodeItem: Codable {
 class FileProviderItem: NSObject, NSFileProviderItem {
 
     private let data: XcodeReleasesData
-    private let model: XcodeItem
+
+    let model: XcodeItem
 
     init(model: XcodeItem, data: XcodeReleasesData) {
         self.model = model

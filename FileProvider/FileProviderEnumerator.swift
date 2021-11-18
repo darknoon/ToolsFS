@@ -75,7 +75,7 @@ class FileProviderEnumerator: NSObject, NSFileProviderEnumerator {
             case .versionItem(_):
                 fatalError("Should not be enumerating inside the Xcode file")
             }
-            print("Returning items to observer \(items.map(\.itemIdentifier))")
+            print("Returning items to observer \(items.map(\.model))")
             observer.didEnumerate(items)
             observer.finishEnumerating(upTo: nil)
             print("Done returning items to observer \(items)")

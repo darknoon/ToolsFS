@@ -173,7 +173,7 @@ extension XcodeRelease {
             case .beta(let n):
                 return "Beta \(n)"
             case .releaseCandidate(let n):
-                return "Release Candidate \(n)"
+                return "RC \(n)"
             }
         }
     }
